@@ -1,0 +1,28 @@
+.custom-block
+  .custom-block-title
+    font-weight 600
+    margin-bottom -0.4rem
+  &.tip, &.warning, &.danger
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+  &.tip
+    background-color #e9ebdd
+    border-color #81894e
+  &.warning
+    background-color rgba(255,219,59,0.25)
+    border-color darken(#ffdb3b, 25%)
+    color darken(#ffdb3b, 75%)
+    .custom-block-title
+      color darken(#ffdb3b, 50%)
+    a
+      color $textColor
+  &.danger
+    background-color #fbd2cd
+    border-color darken(#f36e60, 25%)
+    color darken(#f36e60, 75%)
+    .custom-block-title
+      color darken(#f36e60, 50%)
+    a
+      color $textColor

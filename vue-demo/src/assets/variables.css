@@ -1,0 +1,17 @@
+:root {
+  /* Under the sea pantone color */
+  --sea-pink: #de98ab;
+  --limpet-shell: #98ddde;
+  --living-coral: #f36e60;
+  --vibrant-yellow: #ffdb3b;
+  --turkish-sea: #185190;
+  --viridian-green: #359499;
+  --turtle-green: #81894e;
+  --blue-depths: #273055;
+}
+
+/* Breakpoints */
+@custom-media --sm (width >= 576px);
+@custom-media --md (width >= 786px);
+@custom-media --lg (width >= 992px);
+@custom-media --xl (width >= 1200px);
