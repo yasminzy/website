@@ -3,9 +3,7 @@ export default {
 
   actions: {
     async getArticles({ state, commit }) {
-      const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${
-        state.query
-      }&origin=*`;
+      const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${state.query}&origin=*`;
 
       const response = await this.$axios.get(url);
 

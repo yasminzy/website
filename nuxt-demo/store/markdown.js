@@ -23,9 +23,7 @@ export default {
   actions: {
     async renderPreview({ commit }, input) {
       try {
-        const url = `https://api.github.com/markdown?client_id=${
-          process.env.VUE_APP_MARKDOWN_CLIENT_ID
-        }&client_secret=${process.env.VUE_APP_MARKDOWN_CLIENT_SECRET}`;
+        const url = `https://api.github.com/markdown?client_id=${process.env.VUE_APP_MARKDOWN_CLIENT_ID}&client_secret=${process.env.VUE_APP_MARKDOWN_CLIENT_SECRET}`;
 
         const response = await fetch(url, {
           method: "POST",
