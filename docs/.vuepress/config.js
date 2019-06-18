@@ -22,6 +22,14 @@ module.exports = {
   ga: "UA-90535731-3",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,600&display=swap"
+      }
+    ],
     ["script", { src: "https://unpkg.com/ionicons/dist/ionicons.js" }]
   ],
   locales: {
@@ -77,6 +85,6 @@ module.exports = {
       }
     },
     logo: "/logo.png",
-    repo: "yasminzy/blog"
+    repo: "yasminzy/yasminzy"
   }
 };

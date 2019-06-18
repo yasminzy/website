@@ -10,7 +10,14 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: pkg.description }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,600&display=swap"
+      }
+    ],
     script: [{ src: "https://unpkg.com/ionicons/dist/ionicons.js", body: true }]
   },
   loading: { color: "#2196F3" },
