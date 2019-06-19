@@ -23,7 +23,7 @@ yarn-error.log*
 *.sw?
 
 # Docs
-docs/.vuepress/dist/*
+docs/.vuepress/dist
 
 # Nuxt
 nuxt-demo/logs
