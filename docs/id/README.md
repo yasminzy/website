@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.jpg
 heroText: Yasmin Zulfati Yusrina
-description: Front-end web developer di Bandung
+tagline: Front-end web developer di Bandung
 actionText: Lihat tutorial
 actionLink: tutorial/
 links:
