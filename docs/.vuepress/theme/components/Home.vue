@@ -20,7 +20,7 @@
       </p>
     </header>
 
-    <!-- <div class="features" v-if="data.features && data.features.length">
+    <div class="features" v-if="data.features && data.features.length">
       <div
         class="feature"
         v-for="(feature, index) in data.features"
@@ -29,7 +29,7 @@
         <h2>{{ feature.title }}</h2>
         <p>{{ feature.details }}</p>
       </div>
-    </div> -->
+    </div>
 
     <Content class="theme-default-content custom" />
 
@@ -146,41 +146,11 @@ export default {
     }
   }
 
-  .custom {
-    margin: auto;
-    max-width: 80ch;
-    text-align: center;
-  }
-
   .footer {
     padding: 2.5rem;
     border-top: 1px solid $borderColor;
     text-align: center;
     color: lighten($textColor, 25%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .links {
-    align-items: center;
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-
-    li {
-      border-bottom: none;
-      color: lighten($textColor, 10%);
-      font-size: 1.4rem;
-      font-weight: 500;
-      padding-left: 1rem;
-      padding-right: 1rem;
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
   }
 }
 
@@ -230,10 +200,6 @@ export default {
       h2 {
         font-size: 1.25rem;
       }
-    }
-
-    .links li {
-      font-size: 1.25rem;
     }
   }
 }
