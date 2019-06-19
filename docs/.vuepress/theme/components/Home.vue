@@ -1,22 +1,37 @@
 <template>
-  <div class="home">
-    <div class="hero">
-      <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero" />
+  <main class="home" aria-labelledby="main-title">
+    <header class="hero">
+      <img
+        v-if="data.heroImage"
+        :src="$withBase(data.heroImage)"
+        :alt="data.heroAlt || 'hero'"
+      />
 
-      <h1>{{ data.heroText || $title || "Hello" }}</h1>
+      <h1 v-if="data.heroText !== null" id="main-title">
+        {{ data.heroText || $title || "Hello" }}
+      </h1>
 
       <p class="description">
-        {{
-          data.description || $description || "Welcome to your VuePress site"
-        }}
+        {{ data.tagline || $description || "Welcome to your VuePress site" }}
       </p>
 
       <p class="action" v-if="data.actionText && data.actionLink">
         <NavLink class="action-button" :item="actionLink" />
       </p>
-    </div>
+    </header>
 
-    <Content custom class="custom" />
+    <!-- <div class="features" v-if="data.features && data.features.length">
+      <div
+        class="feature"
+        v-for="(feature, index) in data.features"
+        :key="index"
+      >
+        <h2>{{ feature.title }}</h2>
+        <p>{{ feature.details }}</p>
+      </div>
+    </div> -->
+
+    <Content class="theme-default-content custom" />
 
     <div class="footer" v-if="data.footer">
       <p>{{ data.footer }}</p>
@@ -29,11 +44,11 @@
         </li>
       </ul>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
-import NavLink from "./NavLink.vue";
+import NavLink from "@theme/components/NavLink.vue";
 
 export default {
   components: { NavLink },
@@ -54,24 +69,20 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl';
-
 .home {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 960px;
-  min-height: calc(100vh - 57.59px);
   padding: $navbarHeight 2rem 0;
+  max-width: 960px;
+  margin: 0px auto;
+  display: block;
 
   .hero {
     text-align: center;
 
     img {
+      max-width: 100%;
+      max-height: 280px;
       display: block;
       margin: 3rem auto 1.5rem;
-      max-height: 280px;
-      max-width: 100%;
     }
 
     h1 {
@@ -83,22 +94,22 @@ export default {
     }
 
     .description {
-      color: lighten($textColor, 40%);
+      max-width: 35rem;
       font-size: 1.6rem;
       line-height: 1.3;
-      max-width: 35rem;
+      color: lighten($textColor, 40%);
     }
 
     .action-button {
-      background-color: $accentColor;
-      border-bottom: 1px solid darken($accentColor, 10%);
-      border-radius: 4px;
-      box-sizing: border-box;
-      color: #fff;
       display: inline-block;
       font-size: 1.2rem;
+      color: #fff;
+      background-color: $accentColor;
       padding: 0.8rem 1.6rem;
+      border-radius: 4px;
       transition: background-color 0.1s ease;
+      box-sizing: border-box;
+      border-bottom: 1px solid darken($accentColor, 10%);
 
       &:hover {
         background-color: lighten($accentColor, 10%);
@@ -106,19 +117,49 @@ export default {
     }
   }
 
+  .features {
+    border-top: 1px solid $borderColor;
+    padding: 1.2rem 0;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+
+  .feature {
+    flex-grow: 1;
+    flex-basis: 30%;
+    max-width: 30%;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      border-bottom: none;
+      padding-bottom: 0;
+      color: lighten($textColor, 10%);
+    }
+
+    p {
+      color: lighten($textColor, 25%);
+    }
+  }
+
   .custom {
+    margin: auto;
+    max-width: 80ch;
     text-align: center;
   }
 
   .footer {
-    align-items: center;
+    padding: 2.5rem;
     border-top: 1px solid $borderColor;
+    text-align: center;
     color: lighten($textColor, 25%);
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
-    padding: 1.5rem;
-    text-align: center;
+    align-items: center;
   }
 
   .links {
@@ -145,12 +186,11 @@ export default {
 
 @media (max-width: $MQMobile) {
   .home {
-    .footer {
-      flex-direction: column-reverse;
+    .features {
+      flex-direction: column;
     }
 
-    .links {
-      justify-content: center;
+    .feature {
       max-width: 100%;
       padding: 0 2.5rem;
     }
@@ -164,8 +204,8 @@ export default {
 
     .hero {
       img {
-        margin: 2rem auto 1.2rem;
         max-height: 210px;
+        margin: 2rem auto 1.2rem;
       }
 
       h1 {
@@ -186,10 +226,14 @@ export default {
       }
     }
 
-    .links {
-      li {
+    .feature {
+      h2 {
         font-size: 1.25rem;
       }
+    }
+
+    .links li {
+      font-size: 1.25rem;
     }
   }
 }

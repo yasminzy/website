@@ -1,16 +1,16 @@
 <script>
-import { isActive, hashRE, groupHeaders } from "./util";
+import { isActive, hashRE, groupHeaders } from "../util";
 
 export default {
   functional: true,
 
-  props: ["item"],
+  props: ["item", "sidebarDepth"],
 
   render(
     h,
     {
-      parent: { $page, $site, $route },
-      props: { item }
+      parent: { $page, $site, $route, $themeConfig, $themeLocaleConfig },
+      props: { item, sidebarDepth }
     }
   ) {
     // use custom active class matching logic
@@ -25,13 +25,22 @@ export default {
             isActive($route, item.basePath + "#" + c.slug)
           )
         : selfActive;
-    const link = renderLink(h, item.path, item.title || item.path, active);
+    const link =
+      item.type === "external"
+        ? renderExternal(h, item.path, item.title || item.path)
+        : renderLink(h, item.path, item.title || item.path, active);
+
     const configDepth =
-      $page.frontmatter.sidebarDepth != null
-        ? $page.frontmatter.sidebarDepth
-        : $site.themeConfig.sidebarDepth;
+      $page.frontmatter.sidebarDepth ||
+      sidebarDepth ||
+      $themeLocaleConfig.sidebarDepth ||
+      $themeConfig.sidebarDepth;
+
     const maxDepth = configDepth == null ? 1 : configDepth;
-    const displayAllHeaders = !!$site.themeConfig.displayAllHeaders;
+
+    const displayAllHeaders =
+      $themeLocaleConfig.displayAllHeaders || $themeConfig.displayAllHeaders;
+
     if (item.type === "auto") {
       return [
         link,
@@ -82,17 +91,33 @@ function renderChildren(h, children, path, route, maxDepth, depth = 1) {
     })
   );
 }
+
+function renderExternal(h, to, text) {
+  return h(
+    "a",
+    {
+      attrs: {
+        href: to,
+        target: "_blank",
+        rel: "noopener noreferrer"
+      },
+      class: {
+        "sidebar-link": true
+      }
+    },
+    [text, h("OutboundLink")]
+  );
+}
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl';
-
 .sidebar .sidebar-sub-headers {
   padding-left: 1rem;
   font-size: 0.95em;
 }
 
 a.sidebar-link {
+  font-size: 1em;
   font-weight: 400;
   display: inline-block;
   color: $textColor;

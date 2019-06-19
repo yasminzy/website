@@ -19,7 +19,6 @@ const developmentSidebar = [
 ];
 
 module.exports = {
-  ga: "UA-90535731-3",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
@@ -47,6 +46,14 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+  plugins: [
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-90535731-3"
+      }
+    ]
+  ],
   themeConfig: {
     docsDir: "docs",
     editLinks: true,
@@ -60,9 +67,6 @@ module.exports = {
           { text: "Tutorial", link: "/tutorial/" }
         ],
         selectText: "Languages",
-        serviceWorker: {
-          updatePopup: true
-        },
         sidebar: { "/tutorial/": developmentSidebar }
       },
       "/id/": {
@@ -75,12 +79,6 @@ module.exports = {
           { text: "Tutorial", link: "/id/tutorial" }
         ],
         selectText: "Bahasa",
-        serviceWorker: {
-          updatePopup: {
-            message: "Ada konten baru",
-            buttonText: "Refresh"
-          }
-        },
         sidebar: { "/id/tutorial/": developmentSidebar }
       }
     },
