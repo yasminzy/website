@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="aos" lang="id" />
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
@@ -37,7 +37,7 @@ npm install aos@next
 
 Dalam `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{22}
+<<< @/nuxt-demo/nuxt.config.js{29}
 
 Dalam `plugins/aos.js`:
 
@@ -45,7 +45,7 @@ Dalam `plugins/aos.js`:
 
 Seperti sebelummya, saya juga memasukkan [setting](https://www.npmjs.com/package/aos#1-initialize-aos) opsional untuk menonaktifkan AOS di ponsel.
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Sekarang kita bisa mulai mengatur [animasi](https://www.npmjs.com/package/aos#animations) dengan atribut `data-aos`. Kita juga bisa mengatur perilakunya dengan atribut `data-aos-*`.
 

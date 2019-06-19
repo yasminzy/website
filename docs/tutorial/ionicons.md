@@ -9,21 +9,21 @@ meta:
 
 <start-tutorial demo="ionicons" />
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
 Include [Ionicons](https://www.npmjs.com/package/ionicons) in `public/index.html`.
 
-<<< @/vue-demo/public/index.html{20}
+<<< @/vue-demo/public/index.html{25}
 
 ### Nuxt
 
 Include Ionicons in `nuxt.config.js`.
 
-<<< @/nuxt-demo/nuxt.config.js{14}
+<<< @/nuxt-demo/nuxt.config.js{21}
 
-## Usage
+## :arrow_right: Usage
 
 To use the icon, insert the `ion-icon` web component to your template. Specify the icon in the `name` attribute. For example, to insert a heart icon write `<ion-icon name="heart" />`.
 

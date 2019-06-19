@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="bootstrap" />
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -43,13 +43,13 @@ npm install bootstrap jquery popper.js
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{19,38-44}
+<<< @/nuxt-demo/nuxt.config.js{26,45-51}
 
 In `plugins/bootstrap.js`:
 
 <<< @/nuxt-demo/plugins/bootstrap.js
 
-## Usage
+## :arrow_right: Usage
 
 Create a `.scss` file to override the default variables. For example, `custom-bootstrap.scss` in `src/assets` or `assets`. The path to the default variables is `bootstrap/scss/_variables.scss`.
 

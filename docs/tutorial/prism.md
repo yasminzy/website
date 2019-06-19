@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="prism" />
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -38,7 +38,7 @@ In this example, I use the funky theme. Here are the available themes:
 - prism-twilight
 - prism
 
-I also add an scss [component](https://prismjs.com/index.html#languages-list). Prims supports Markup, CSS, JavaScript, and C-like by default so we do not need to import them.
+I also add an SCSS [component](https://prismjs.com/index.html#languages-list). Prims supports Markup, CSS, JavaScript, and C-like by default so we do not need to import them.
 
 Prism supports some [plugins](https://prismjs.com/index.html#plugins). I use [autolinker](https://prismjs.com/plugins/autolinker) here to make the link in the code works.
 
@@ -53,13 +53,13 @@ npm install prismjs vue-prism-component
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{24}
+<<< @/nuxt-demo/nuxt.config.js{31}
 
 In `plugins/prism.js`:
 
 <<< @/nuxt-demo/plugins/prism.js
 
-## Usage
+## :arrow_right: Usage
 
 Now we can use the `prism` component. Specify the language in the `language` attribute. The default is markup.
 

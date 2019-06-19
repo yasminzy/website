@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="chart" />
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -38,13 +38,13 @@ npm install chart.js hchs-vue-charts
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{23}
+<<< @/nuxt-demo/nuxt.config.js{30}
 
 In `plugins/chart.js`:
 
 <<< @/nuxt-demo/plugins/chart.js
 
-## Usage
+## :arrow_right: Usage
 
 I want to use three kinds of charts. I split them into components to make the code easier to read.
 

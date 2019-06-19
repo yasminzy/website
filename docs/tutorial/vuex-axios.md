@@ -11,7 +11,7 @@ meta:
 
 In this tutorial, I want to use Wikipedia's [Opensearch API](https://www.mediawiki.org/wiki/API:Opensearch). With this, we can enter keywords and get related articles from Wikipedia.
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -40,11 +40,11 @@ npm install @nuxtjs/axios
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{26}
+<<< @/nuxt-demo/nuxt.config.js{33}
 
 You can pass [options](https://axios.nuxtjs.org/options) using `axios` section in that file if you want. For example: `axios: { proxy: true }`
 
-## Usage
+## :arrow_right: Usage
 
 In `src/views/vuex-axios.vue`:
 

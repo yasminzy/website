@@ -9,21 +9,21 @@ meta:
 
 <start-tutorial demo="ionicons" lang="id" />
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
 Masukkan [Ionicons](https://www.npmjs.com/package/ionicons) ke `public/index.html`.
 
-<<< @/vue-demo/public/index.html{20}
+<<< @/vue-demo/public/index.html{25}
 
 ### Nuxt
 
 Masukkan Ionicons ke `nuxt.config.js`.
 
-<<< @/nuxt-demo/nuxt.config.js{14}
+<<< @/nuxt-demo/nuxt.config.js{21}
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Untuk menggunakan ikon, masukkan komponen web `ion-icon` ke template-mu. Masukkan nama ikon di atribut `name`. Contohnya, untuk memasukkan ikon hati tulis `<ion-icon name="heart" />`.
 

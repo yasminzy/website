@@ -14,7 +14,7 @@ Ada banyak [plugins](https://www.postcss.parts/) untuk PostCSS. Pada tutorial in
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env)
 - [rucksack-css](https://www.npmjs.com/package/rucksack-css)
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
@@ -53,7 +53,7 @@ Dalam `nuxt.config.js`:
 
 Lalu saya taruh file `variables.css` yang sama di `assets`.
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Buat file `.css` untuk menulis variabel-variabelmu, dalam kasus ini `variables.css` di `src/assets` or `assets`.
 

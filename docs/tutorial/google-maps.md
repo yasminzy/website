@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="google-maps" />
 
-## Get API Key
+## :key: Get API Key
 
 First, get an API key from the [Google Maps Platform](https://cloud.google.com/maps-platform/). Click **Get Started**.
 
@@ -27,7 +27,7 @@ First, get an API key from the [Google Maps Platform](https://cloud.google.com/m
 
 7.  Get the API key ![Get API key](../img/gmaps-7-get-api-key.png)
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -69,13 +69,13 @@ Like before, create a file named `.env` in the project root and paste your API k
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{20,26,56}
+<<< @/nuxt-demo/nuxt.config.js{27,33,63}
 
 In `plugins/vue2-google-maps.js`:
 
 <<< @/nuxt-demo/plugins/google-maps.js
 
-## Usage
+## :arrow_right: Usage
 
 Now we can start embedding Google Maps.
 

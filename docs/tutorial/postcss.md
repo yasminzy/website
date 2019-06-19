@@ -14,7 +14,7 @@ There are lots of [plugins](https://www.postcss.parts/) for PostCSS. In this tut
 - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env)
 - [rucksack-css](https://www.npmjs.com/package/rucksack-css)
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -51,7 +51,7 @@ In `nuxt.config.js`:
 
 <<< @/nuxt-demo/nuxt.config.js{17,45-53}
 
-## Usage
+## :arrow_right: Usage
 
 Create a `.css` file to write your variables, in my case `variables.css` in `src/assets` or `assets`.
 

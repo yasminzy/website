@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="vue-lazyload" lang="id" />
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
@@ -42,7 +42,7 @@ npm install vue-lazyload
 
 Dalam `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{23}
+<<< @/nuxt-demo/nuxt.config.js{30}
 
 Dalam `plugins/vue-lazyload.js`:
 
@@ -50,7 +50,7 @@ Dalam `plugins/vue-lazyload.js`:
 
 Saya memasukkan [pengaturan](https://github.com/hilongjw/vue-lazyload#constructor-options) opsional yang sama disini.
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Sekarang kita bisa mulai [mengimplementasikan](https://github.com/hilongjw/vue-lazyload#implementation) vue-lazyload dengan directive `v-lazy`.
 

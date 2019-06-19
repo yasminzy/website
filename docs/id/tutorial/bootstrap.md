@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="bootstrap" lang="id" />
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
@@ -43,13 +43,13 @@ npm install bootstrap jquery popper.js
 
 Dalam `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{19,38-44}
+<<< @/nuxt-demo/nuxt.config.js{26,45-51}
 
 Dalam `plugins/bootstrap.js`:
 
 <<< @/nuxt-demo/plugins/bootstrap.js
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Buat file `.scss` untuk meng-override variabel-variabel default, misalnya `custom-bootstrap.scss` di `src/assets` atau `assets`. Path ke variabel default tersebut adalah `bootstrap/scss/_variables.scss`.
 

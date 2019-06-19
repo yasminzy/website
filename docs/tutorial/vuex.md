@@ -30,7 +30,7 @@ In this tutorial, I want to use Github's [Markdown API](https://developer.github
 
 [Register](https://github.com/settings/apps/new) a new GitHub App to get a client ID and a client secret because we will need them later.
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -60,9 +60,9 @@ Like before, create a file named `.env` in the project root and paste your clien
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{57-58}
+<<< @/nuxt-demo/nuxt.config.js{64-65}
 
-## Usage
+## :arrow_right: Usage
 
 In `src/views/vuex.vue`:
 

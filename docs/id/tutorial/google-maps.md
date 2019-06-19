@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="google-maps" lang="id" />
 
-## Mendapatkan API Key
+## :key: Mendapatkan API Key
 
 Pertama, dapatkan API key dari [Google Maps Platform](https://cloud.google.com/maps-platform/). Klik **Get Started**.
 
@@ -27,7 +27,7 @@ Pertama, dapatkan API key dari [Google Maps Platform](https://cloud.google.com/m
 
 7.  Dapatkan API key ![Dapatkan API key](../../img/gmaps-7-get-api-key.png)
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
@@ -69,13 +69,13 @@ Seperti sebelumnya, buat file bernama `.env` di root proyek dan paste API key-mu
 
 Dalam `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{20,26,56}
+<<< @/nuxt-demo/nuxt.config.js{27,33,63}
 
 Dalam `plugins/vue2-google-maps.js`:
 
 <<< @/nuxt-demo/plugins/google-maps.js
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Sekarang kita bisa mulai menambahkan Google Maps.
 

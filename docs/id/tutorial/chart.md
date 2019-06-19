@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="chart" lang="id" />
 
-## Instalasi
+## :computer: Instalasi
 
 ### Vue
 
@@ -38,13 +38,13 @@ npm install chart.js hchs-vue-charts
 
 Dalam `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{23}
+<<< @/nuxt-demo/nuxt.config.js{30}
 
 Dalam `plugins/chart.js`:
 
 <<< @/nuxt-demo/plugins/chart.js
 
-## Penggunaan
+## :arrow_right: Penggunaan
 
 Saya mau menggunakan tiga macam grafik. Saya bagi mereka menjadi komponen-komponen agar kodenya lebih mudah dibaca.
 

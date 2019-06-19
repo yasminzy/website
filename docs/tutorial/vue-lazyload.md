@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="vue-lazyload" />
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -42,7 +42,7 @@ npm install vue-lazyload
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{21}
+<<< @/nuxt-demo/nuxt.config.js{28}
 
 In `plugins/vue-lazyload.js`:
 
@@ -50,7 +50,7 @@ In `plugins/vue-lazyload.js`:
 
 I passed the same optional [settings](https://github.com/hilongjw/vue-lazyload#constructor-options) here.
 
-## Usage
+## :arrow_right: Usage
 
 Now we can start [implementing](https://github.com/hilongjw/vue-lazyload#implementation) vue-lazyload using `v-lazy` directive.
 

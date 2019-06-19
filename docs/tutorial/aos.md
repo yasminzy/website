@@ -9,7 +9,7 @@ meta:
 
 <start-tutorial demo="aos" />
 
-## Installation
+## :computer: Installation
 
 ### Vue
 
@@ -37,7 +37,7 @@ npm install aos@next
 
 In `nuxt.config.js`:
 
-<<< @/nuxt-demo/nuxt.config.js{22}
+<<< @/nuxt-demo/nuxt.config.js{29}
 
 In `plugins/aos.js`:
 
@@ -45,7 +45,7 @@ In `plugins/aos.js`:
 
 Like before, I also passed an optional [setting](https://www.npmjs.com/package/aos#1-initialize-aos) to disable AOS on the phone.
 
-## Usage
+## :arrow_right: Usage
 
 Now we can start setting [animations](https://www.npmjs.com/package/aos#animations) using `data-aos` attribute. We can also adjust the behavior with the `data-aos-*` attributes.
 
