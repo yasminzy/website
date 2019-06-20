@@ -4,6 +4,7 @@
       <p v-if="lang == 'id'">
         <a class="router-link-active" href="./">Pertama kali kesini? 😁</a>
       </p>
+
       <p v-else>
         <a class="router-link-active" href="./">First visit? 😁</a>
       </p>
@@ -13,7 +14,7 @@
       <li v-for="(item, index) in links" :key="index">
         <a :href="item.url + demo" target="_blank" rel="noopener noreferrer">
           {{ item.label }}
-          <ExternalLinkSvg />
+          <OutboundLink />
         </a>
       </li>
     </ul>
@@ -21,12 +22,7 @@
 </template>
 
 <script>
-import ExternalLinkSvg from "./external-link-svg";
-
 export default {
-  components: {
-    ExternalLinkSvg
-  },
   props: {
     demo: {
       type: String,
