@@ -248,11 +248,15 @@ th, td {
 @require 'mobile.styl';
 
 // Custom style
+::selection {
+  background-color: $accentColor;
+  color: white;
+}
+
 .home {
   .theme-default-content.custom {
-    margin: auto;
+    margin: 5rem auto 0;
     max-width: 80ch;
-    text-align: center;
   }
 
   .footer {
@@ -290,4 +294,8 @@ th, td {
   .theme-default-content {
     max-width: 1200px;
   }
+}
+
+.vssue {
+  padding: 0;
 }
