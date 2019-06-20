@@ -6,6 +6,6 @@ meta:
 pageClass: portfolio
 ---
 
-# {{ $page.title }}
-
 <project-list />
+
+<Vssue title="Portfolio" />
