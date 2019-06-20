@@ -6,6 +6,16 @@
       <NavLink v-else :item="item" />
     </div>
 
+    <a
+      href="https://www.youtube.com/channel/UCDmPISxSI9P3VZOjAU5sPZw?view_as=subscriber"
+      class="repo-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      YouTube
+      <OutboundLink />
+    </a>
+
     <!-- repo link -->
     <a
       v-if="repoLink"

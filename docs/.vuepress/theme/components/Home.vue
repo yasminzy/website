@@ -34,15 +34,7 @@
     <Content class="theme-default-content custom" />
 
     <div class="footer" v-if="data.footer">
-      <p>{{ data.footer }}</p>
-
-      <ul class="links" v-if="data.links && data.links.length">
-        <li v-for="(links, index) in data.links" :key="index">
-          <a :href="links.url">
-            <ion-icon :name="links.name" class="action-button" />
-          </a>
-        </li>
-      </ul>
+      {{ data.footer }}
     </div>
   </main>
 </template>
