@@ -2,7 +2,17 @@
   <main class="page">
     <slot name="top" />
 
-    <Content class="theme-default-content" />
+    <div class="theme-default-content">
+      <h1>{{ $page.frontmatter.title }}</h1>
+
+      <start-tutorial
+        v-if="$page.frontmatter.topic"
+        :demo="urlize($page.frontmatter.topic)"
+        :lang="$lang"
+      />
+
+      <Content />
+    </div>
 
     <footer class="page-edit">
       <div class="edit-link" v-if="editLink">
@@ -36,12 +46,17 @@
       </p>
     </div>
 
+    <div v-if="$page.frontmatter.topic" class="theme-default-content">
+      <Vssue :title="$page.frontmatter.topic" />
+    </div>
+
     <slot name="bottom" />
   </main>
 </template>
 
 <script>
 import { resolvePage, outboundRE, endingSlashRE } from "../util";
+import { urlize } from "../util/functions";
 
 export default {
   props: ["sidebarItems"],
@@ -140,7 +155,8 @@ export default {
         (docsDir ? docsDir.replace(endingSlashRE, "") + "/" : "") +
         path
       );
-    }
+    },
+    urlize
   }
 };
 
