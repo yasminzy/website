@@ -1,13 +1,10 @@
 ---
 title: How to Use Prism in a Vue/Nuxt Project
+topic: Prism
 meta:
   - name: description
     content: Steps to use Prism in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="prism" />
 
 ## :computer: Installation
 

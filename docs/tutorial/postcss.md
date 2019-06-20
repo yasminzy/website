@@ -1,13 +1,10 @@
 ---
 title: How to Use PostCSS in a Vue/Nuxt Project
+topic: PostCSS
 meta:
   - name: description
     content: Steps to use PostCSS tool in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="postcss" />
 
 There are lots of [plugins](https://www.postcss.parts/) for PostCSS. In this tutorial, I will use 2 plugins, which are:
 

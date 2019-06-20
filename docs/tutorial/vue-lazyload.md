@@ -1,13 +1,10 @@
 ---
 title: How to Use Vue Lazyload in a Vue/Nuxt Project
+topic: Vue Lazyload
 meta:
   - name: description
     content: Steps to use vue-lazyload module in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="vue-lazyload" />
 
 ## :computer: Installation
 

@@ -1,13 +1,10 @@
 ---
 title: How to Use Custom Bootstrap in a Vue/Nuxt Project
+topic: Bootstrap
 meta:
   - name: description
     content: Steps to use Bootstrap library in a Vue/Nuxt project (nav, jumbotron, and form demo).
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="bootstrap" />
 
 ## :computer: Installation
 

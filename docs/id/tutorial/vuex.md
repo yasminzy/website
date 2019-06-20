@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Menggunakan Vuex dalam Proyek Vue/Nuxt
+topic: Vuex
 meta:
   - name: description
     content: Langkah penggunaan Vuex dalam proyek Vue/Nuxt.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="vuex" lang="id" />
 
 Sederhananya, [Vuex](https://vuex.vuejs.org/) adalah sesuatu yang bisa kita gunakan untuk mengatur state di proyek Vue/Nuxt kita. **Store** adalah kontainernya. Store ini terdiri dari 4 bagian:
 

@@ -1,13 +1,10 @@
 ---
 title: How to Use Vuex in a Vue/Nuxt Project
+topic: Vuex
 meta:
   - name: description
     content: Steps to use Vuex in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="vuex" />
 
 In simple words, [Vuex](https://vuex.vuejs.org/) is something we can use to manage state in our Vue/Nuxt project. **Store** is the container. This store consists of 4 parts:
 

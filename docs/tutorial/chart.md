@@ -1,13 +1,10 @@
 ---
 title: How to Use Vue Charts in a Vue/Nuxt Project
+topic: Chart
 meta:
   - name: description
     content: Steps to use Vue Charts in a Vue/Nuxt project (line, bar, and doughnut charts demo).
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="chart" />
 
 ## :computer: Installation
 

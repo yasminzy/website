@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Memasukkan Google Maps dalam Proyek Vue/Nuxt
+topic: Google Maps
 meta:
   - name: description
     content: Langkah memasukkan Google Maps dalam proyek Vue/Nuxt.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="google-maps" lang="id" />
 
 ## :key: Mendapatkan API Key
 

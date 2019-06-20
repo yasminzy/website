@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Menggunakan PostCSS dalam proyek Vue/Nuxt Project
+topic: PostCSS
 meta:
   - name: description
     content: Langkah penggunaan tool PostCSS dalam proyek Vue/Nuxt.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="postcss" lang="id" />
 
 Ada banyak [plugins](https://www.postcss.parts/) untuk PostCSS. Pada tutorial ini, saya akan menggunakan 2 plugins, yaitu:
 

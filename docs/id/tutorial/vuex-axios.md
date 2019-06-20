@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Menggunakan klien HTTP Axios dalam Proyek Vue/Nuxt
+topic: Vuex Axios
 meta:
   - name: description
     content: Langkah penggunaan klien HTTP Axios dalam proyek Vue/Nuxt.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="axios" lang="id" />
 
 Pada tutorial ini, saya mau menggunakan [API Opensearch](https://www.mediawiki.org/wiki/API:Opensearch) dari Wikipedia. Dengan ini, kita bisa memasukkan kata kunci lalu mendapatkan artikel terkait dari Wikipedia.
 

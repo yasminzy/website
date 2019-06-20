@@ -1,13 +1,10 @@
 ---
 title: How to Use AOS Library in a Vue/Nuxt Project
+topic: AOS
 meta:
   - name: description
     content: Steps to use Animation on Scroll (AOS) library in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="aos" />
 
 ## :computer: Installation
 

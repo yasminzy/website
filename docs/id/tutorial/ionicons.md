@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Menggunakan Ionicons dalam Proyek Vue/Nuxt
+topic: Ionicons
 meta:
   - name: description
     content: Langkah penggunaan Ionicons library dalam proyek Vue/Nuxt.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="ionicons" lang="id" />
 
 ## :computer: Instalasi
 

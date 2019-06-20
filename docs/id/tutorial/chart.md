@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Menggunakan Vue Charts dalam Proyek Vue/Nuxt
+topic: Chart
 meta:
   - name: description
     content: Langkah menggunakan Vue Charts dalam proyek Vue/Nuxt (demo grafik garis, bar, dan donat).
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="chart" lang="id" />
 
 ## :computer: Instalasi
 

@@ -5,8 +5,6 @@ meta:
     content: Bagaimana saya memulai tutorial-tutorial Vue dan Nuxt.
 ---
 
-# {{ $page.title }}
-
 Saya menulis tutorial tentang [Vue](https://vuejs.org/) dan [Nuxt](https://nuxtjs.org/). Saya tidak memulai tiap tutorial from scratch, jadi berikut adalah awal proyeknya.
 
 ::: warning PERINGATAN

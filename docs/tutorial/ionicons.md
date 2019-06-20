@@ -1,13 +1,10 @@
 ---
 title: How to Use Ionicons in a Vue/Nuxt Project
+topic: Ionicons
 meta:
   - name: description
     content: Steps to use Ionicons in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="ionicons" />
 
 ## :computer: Installation
 

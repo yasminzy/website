@@ -1,13 +1,10 @@
 ---
 title: How to Embed Google Maps in a Vue/Nuxt Project
+topic: Google Maps
 meta:
   - name: description
     content: Steps to embed Google Maps in a Vue/Nuxt project.
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="google-maps" />
 
 ## :key: Get API Key
 

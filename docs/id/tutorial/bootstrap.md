@@ -1,13 +1,10 @@
 ---
 title: Bagaimana Cara Menggunakan Bootstrap Custom dalam proyek Vue/Nuxt
+topic: Bootstrap
 meta:
   - name: description
     content: Langkah penggunaan Bootstrap custom dalam proyek Vue/Nuxt (demo nav, jumbotron, dan form).
 ---
-
-# {{ $page.title }}
-
-<start-tutorial demo="bootstrap" lang="id" />
 
 ## :computer: Instalasi
 

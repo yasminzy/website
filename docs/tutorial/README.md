@@ -5,8 +5,6 @@ meta:
     content: How I start the Vue and Nuxt tutorials.
 ---
 
-# {{ $page.title }}
-
 I write [Vue](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/) tutorials. I do not start each tutorial from scratch, so I will show you how I set them up here.
 
 ::: warning
