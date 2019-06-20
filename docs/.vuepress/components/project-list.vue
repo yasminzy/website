@@ -40,19 +40,19 @@ export default {
 
 <style lang="stylus" scoped>
 ul {
+  display: grid;
   list-style-type: none;
   padding-left: 0;
-  display: grid;
   row-gap: 2rem;
 
   @media (min-width: 576px) {
-    grid-template-columns: 1fr 1fr;
     column-gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

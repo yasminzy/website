@@ -8,4 +8,6 @@ pageClass: portfolio
 
 <project-list lang="id" />
 
+---
+
 <Vssue title="Portfolio" />
