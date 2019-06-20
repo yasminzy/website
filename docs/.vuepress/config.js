@@ -1,3 +1,6 @@
+require("dotenv").config();
+const webpack = require("webpack");
+
 const developmentSidebar = [
   {
     title: "Tutorial",
@@ -19,6 +22,9 @@ const developmentSidebar = [
 ];
 
 module.exports = {
+  configureWebpack: config => {
+    return { plugins: [new webpack.EnvironmentPlugin({ ...process.env })] };
+  },
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
@@ -48,6 +54,16 @@ module.exports = {
   },
   plugins: [
     [
+      "@vssue/vuepress-plugin-vssue",
+      {
+        platform: "github",
+        owner: "yasminzy",
+        repo: "yasminzy",
+        clientId: process.env.VUE_APP_CLIENT_ID,
+        clientSecret: process.env.VUE_APP_CLIENT_SECRET
+      }
+    ],
+    [
       "@vuepress/google-analytics",
       {
         ga: "UA-90535731-3"
@@ -56,7 +72,6 @@ module.exports = {
   ],
   themeConfig: {
     docsDir: "docs",
-    editLinks: true,
     locales: {
       "/": {
         label: "English",
@@ -70,7 +85,6 @@ module.exports = {
         sidebar: { "/tutorial/": developmentSidebar }
       },
       "/id/": {
-        editLinkText: "Sunting halaman ini",
         label: "Indonesia",
         lastUpdated: "Terakhir diperbarui",
         nav: [

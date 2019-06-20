@@ -1,7 +1,10 @@
 {
   "private": true,
   "devDependencies": {
+    "@vssue/api-github-v3": "^1.0.0",
+    "@vssue/vuepress-plugin-vssue": "^1.0.1",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "dotenv": "^8.0.0",
     "vuepress": "^1.0.1"
   },
   "scripts": {
