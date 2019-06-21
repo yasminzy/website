@@ -37,24 +37,24 @@ export default {
       const pathWithoutMd = this.$page.relativePath.replace(".md", "");
 
       if (type == "demo") {
-        if (pathWithoutMd.includes("vue")) {
-          return `https://vuedemo.netlify.com/${pathWithoutMd.replace(
-            "vue/",
-            ""
-          )}`;
-        } else if (pathWithoutMd.includes("nuxt")) {
+        if (pathWithoutMd.includes("nuxt")) {
           return `https://nuxtdemo.netlify.com/${pathWithoutMd.replace(
             "nuxt/",
+            ""
+          )}`;
+        } else if (pathWithoutMd.includes("vue")) {
+          return `https://vuedemo.netlify.com/${pathWithoutMd.replace(
+            "vue/",
             ""
           )}`;
         } else {
           console.log("vue or nuxt is not in the path.");
         }
       } else if (type == "repo") {
-        if (pathWithoutMd.includes("vue")) {
-          return "https://github.com/yasminzy/yasminzy/tree/master/vue-demo";
-        } else if (pathWithoutMd.includes("nuxt")) {
+        if (pathWithoutMd.includes("nuxt")) {
           return "https://github.com/yasminzy/yasminzy/tree/master/nuxt-demo";
+        } else if (pathWithoutMd.includes("vue")) {
+          return "https://github.com/yasminzy/yasminzy/tree/master/vue-demo";
         } else {
           console.log("vue or nuxt is not in the path.");
         }
