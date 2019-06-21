@@ -6,7 +6,6 @@ const developmentSidebar = [
     title: "Tutorial",
     collapsable: false,
     children: [
-      ["", "Getting Started"],
       ["aos", "AOS"],
       ["bootstrap", "Bootstrap"],
       ["chart", "Chart"],
@@ -42,15 +41,7 @@ module.exports = {
       lang: "en",
       title: "Yasmin ZY",
       description: "Front-end web developer based in Bandung."
-    },
-    "/id/": {
-      lang: "id",
-      title: "Yasmin ZY",
-      description: "Front-end web developer di Bandung."
     }
-  },
-  markdown: {
-    lineNumbers: true
   },
   plugins: [
     [
@@ -63,12 +54,8 @@ module.exports = {
         clientSecret: process.env.VUE_APP_CLIENT_SECRET
       }
     ],
-    [
-      "@vuepress/google-analytics",
-      {
-        ga: "UA-90535731-3"
-      }
-    ]
+    ["@vuepress/google-analytics", { ga: "UA-90535731-3" }],
+    ["sitemap", { hostname: "https://www.yasminzy.com" }]
   ],
   themeConfig: {
     docsDir: "docs",
@@ -79,21 +66,15 @@ module.exports = {
         nav: [
           { text: "Home", link: "/" },
           { text: "Portfolio", link: "/portfolio" },
-          { text: "Tutorial", link: "/tutorial/" }
+          {
+            text: "Tutorial",
+            items: [
+              { text: "Vue.js", link: "/vue/" },
+              { text: "Nuxt.js", link: "/nuxt/" }
+            ]
+          }
         ],
-        selectText: "Languages",
-        sidebar: { "/tutorial/": developmentSidebar }
-      },
-      "/id/": {
-        label: "Indonesia",
-        lastUpdated: "Terakhir diperbarui",
-        nav: [
-          { text: "Beranda", link: "/id/" },
-          { text: "Portofolio", link: "/id/portfolio" },
-          { text: "Tutorial", link: "/id/tutorial" }
-        ],
-        selectText: "Bahasa",
-        sidebar: { "/id/tutorial/": developmentSidebar }
+        sidebar: { "/vue/": developmentSidebar, "/nuxt/": developmentSidebar }
       }
     },
     logo: "/logo.png",
