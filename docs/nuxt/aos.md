@@ -8,7 +8,7 @@ meta:
 
 [AOS](https://github.com/michalsnik/aos) is a CSS-Driven “On Scroll” animation library.
 
-### :footprints: Steps
+## :footprints: Steps
 
 1. Create a Nuxt project and install AOS.
 
