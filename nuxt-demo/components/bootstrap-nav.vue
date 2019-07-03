@@ -3,7 +3,7 @@
     <nuxt-link class="navbar-brand" to="/">
       <img
         class="d-inline-block align-top"
-        src="@assets/logo.svg"
+        src="~assets/logo.svg"
         alt="Logo"
         width="30"
         height="30"
