@@ -21,8 +21,6 @@
 </template>
 
 <style lang="scss">
-@import "../assets/custom-bootstrap";
-
 .container {
   margin: 0 auto;
   max-width: 992px;

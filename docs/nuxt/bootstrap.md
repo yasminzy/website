@@ -26,7 +26,7 @@ npm i bootstrap jquery popper.js
 
 ```js
 export default {
-  plugins: ["~/plugins/bootstrap"],
+  plugins: ["@/plugins/bootstrap"],
   build: {
     plugins: [
       new webpack.ProvidePlugin({

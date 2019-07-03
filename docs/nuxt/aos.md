@@ -26,7 +26,7 @@ npm i aos@next
 
 ```js
 export default {
-  plugins: [{ src: "~/plugins/aos", ssr: false }]
+  plugins: [{ src: "@/plugins/aos", ssr: false }]
 };
 ```
 

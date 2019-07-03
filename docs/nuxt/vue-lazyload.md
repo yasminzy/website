@@ -28,7 +28,7 @@ npm i vue-lazyload
 
 ```js
 export default {
-  plugins: ["~/plugins/vue-lazyload"]
+  plugins: ["@/plugins/vue-lazyload"]
 };
 ```
 

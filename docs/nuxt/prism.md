@@ -26,7 +26,7 @@ npm i prismjs vue-prism-component
 
 ```js
 export default {
-  plugins: [{ src: "~/plugins/prism", ssr: false }]
+  plugins: [{ src: "@/plugins/prism", ssr: false }]
 };
 ```
 

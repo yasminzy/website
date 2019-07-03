@@ -26,7 +26,7 @@ npm i chart.js hchs-vue-charts
 
 ```js
 export default {
-  plugins: [{ src: "~/plugins/chart", ssr: false }]
+  plugins: [{ src: "@/plugins/chart", ssr: false }]
 };
 ```
 

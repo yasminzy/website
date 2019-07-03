@@ -55,7 +55,7 @@ export default {
     VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
   },
   modules: ["@nuxtjs/dotenv"],
-  plugins: ["~/plugins/google-maps"]
+  plugins: ["@/plugins/google-maps"]
 };
 ```
 
