@@ -18,14 +18,21 @@ cd nuxt-demo
 npm i bootstrap jquery popper.js
 ```
 
-2. Create Bootstrap plugin in `plugins/bootstrap.js`.
+2. Customize Bootstrap, e.g. in `assets/custom-bootstrap.scss`. The path to the default variables is `bootstrap/scss/_variables.scss`.
+
+<<< @/nuxt-demo/assets/custom-bootstrap.scss
+
+3. Create Bootstrap plugin in `plugins/bootstrap.js`.
 
 <<< @/nuxt-demo/plugins/bootstrap.js
 
-3. Register the plugin in `nuxt.config.js`.
+4. Register the variables and plugin in `nuxt.config.js`.
 
 ```js
+const webpack = require("webpack");
+
 export default {
+  css: [{ src: "@/assets/custom-bootstrap", lang: "scss" }],
   plugins: ["@/plugins/bootstrap"],
   build: {
     plugins: [
@@ -39,15 +46,7 @@ export default {
 };
 ```
 
-4. Customize Bootstrap, e.g. in `assets/custom-bootstrap.scss`. The path to the default variables is `bootstrap/scss/_variables.scss`.
-
-5. Import the style in `layouts/default.vue`:
-
-```scss
-@import "../assets/custom-bootstrap";
-```
-
-6. Use Bootstrap, e.g. in `pages/bootstrap.vue`.
+5. Use Bootstrap, e.g. in `pages/bootstrap.vue`.
 
 <<< @/nuxt-demo/pages/bootstrap.vue
 

@@ -32,7 +32,7 @@ export default {
 };
 ```
 
-5. Use Vue Lazyload, e.g. in `pages/vue-lazyload.vue`.
+5. Use Vue Lazyload, e.g. in `pages/vue-lazyload.vue`. I purposely made a typo in one of the link so you can see how an error is shown in the demo.
 
 <<< @/nuxt-demo/pages/vue-lazyload.vue
 

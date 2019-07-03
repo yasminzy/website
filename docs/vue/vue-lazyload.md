@@ -35,7 +35,7 @@ Vue.use(VueLazyload, {
 });
 ```
 
-4. Use Vue Lazyload, e.g. in `src/views/vue-lazyload.vue`.
+4. Use Vue Lazyload, e.g. in `src/views/vue-lazyload.vue`. I purposely made a typo in one of the link so you can see how an error is shown in the demo.
 
 <<< @/vue-demo/src/views/vue-lazyload.vue
 
