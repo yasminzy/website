@@ -2,11 +2,11 @@
   "private": true,
   "devDependencies": {
     "@vssue/api-github-v3": "^1.0.0",
-    "@vssue/vuepress-plugin-vssue": "^1.0.1",
-    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "@vssue/vuepress-plugin-vssue": "^1.0.2",
+    "@vuepress/plugin-google-analytics": "^1.0.2",
     "dotenv": "^8.0.0",
     "vuepress-plugin-sitemap": "^2.1.2",
-    "vuepress": "^1.0.1"
+    "vuepress": "^1.0.2"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
