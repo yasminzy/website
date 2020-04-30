@@ -19,7 +19,7 @@
     "chart.js": "^2.8.0",
     "cross-env": "^5.2.0",
     "hchs-vue-charts": "^1.2.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nuxt": "^2.8.1",
     "popper.js": "^1.15.0",
     "postcss-preset-env": "^6.6.0",
