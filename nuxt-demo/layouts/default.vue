@@ -1,26 +1,40 @@
 <template>
-  <no-ssr>
-    <div class="container">
-      <nav v-if="this.$route.name != 'index'" aria-label="breadcrumb">
-        <ol class="breadcrumb align-items-center">
-          <li class="breadcrumb-item">
-            <nuxt-link to="/" class="d-flex align-items-center">
-              <ion-icon name="home" />
-            </nuxt-link>
-          </li>
+  <b-container>
+    <b-breadcrumb
+      v-if="this.$route.name != 'index'"
+      :items="items"
+      class="w-100"
+    ></b-breadcrumb>
 
-          <li class="breadcrumb-item active" aria-current="page">
-            {{ this.$route.name }}
-          </li>
-        </ol>
-      </nav>
-
-      <nuxt />
-    </div>
-  </no-ssr>
+    <nuxt />
+  </b-container>
 </template>
 
-<style lang="scss">
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: this.$route.name,
+          active: true
+        }
+      ]
+    };
+  },
+  watch: {
+    $route() {
+      this.items[1].text = this.$route.name;
+    }
+  }
+};
+</script>
+
+<style>
 .container {
   margin: 0 auto;
   max-width: 992px;

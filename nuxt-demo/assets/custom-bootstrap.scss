@@ -29,7 +29,7 @@ $font-weight-bold: 600;
 @import "~bootstrap/scss/dropdown";
 @import "~bootstrap/scss/button-group";
 // @import "~bootstrap/scss/input-group";
-// @import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/custom-forms";
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
@@ -50,3 +50,8 @@ $font-weight-bold: 600;
 // @import "~bootstrap/scss/spinners";
 @import "~bootstrap/scss/utilities";
 // @import "~bootstrap/scss/print";
+
+::selection {
+  background-color: $primary;
+  color: #fff;
+}

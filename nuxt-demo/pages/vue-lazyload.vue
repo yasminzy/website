@@ -3,13 +3,13 @@
     <h1>Vue Lazyload Demo</h1>
 
     <div class="grid">
-      <div
+      <b-card
         v-for="(item, index) in img"
         :key="index"
         class="border-primary card"
       >
-        <img v-lazy="item" class="img-fluid" />
-      </div>
+        <b-img v-lazy="item" fluid />
+      </b-card>
     </div>
   </div>
 </template>

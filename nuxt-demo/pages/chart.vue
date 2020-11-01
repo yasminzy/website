@@ -1,34 +1,22 @@
 <template>
-  <no-ssr>
-    <div>
-      <h1>Chart Demo</h1>
+  <div>
+    <h1>Chart Demo</h1>
 
-      <div class="grid">
-        <ChartBar />
-        <ChartDoughnut />
-        <ChartLine />
-      </div>
+    <div class="grid">
+      <ChartBar />
+      <ChartDoughnut />
+      <ChartLine />
     </div>
-  </no-ssr>
+  </div>
 </template>
-
-<script>
-import ChartBar from "@/components/chart-bar";
-import ChartDoughnut from "@/components/chart-doughnut";
-import ChartLine from "@/components/chart-line";
-
-export default {
-  components: {
-    ChartBar,
-    ChartDoughnut,
-    ChartLine
-  }
-};
-</script>
 
 <style lang="scss" scoped>
 .grid {
   display: grid;
-  row-gap: 2rem;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <no-ssr>
+  <client-only>
     <div>
       <h1>Vuex Demo</h1>
 
-      <textarea
+      <b-form-textarea
         id="result"
         v-model="input"
         class="bg-dark container mb-4 text-white"
@@ -11,11 +11,14 @@
         autofocus
         @input="renderPreview"
       >
-      </textarea>
+      </b-form-textarea>
 
-      <div class="border border-primary container" v-html="renderedMd"></div>
+      <b-container
+        class="border border-primary"
+        v-html="renderedMd"
+      ></b-container>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>
@@ -23,14 +26,14 @@ export default {
   computed: {
     input: {
       get() {
-        return this.$store.getters.input;
+        return this.$store.getters["markdown/input"];
       },
       set(value) {
-        this.$store.commit("updateInput", value);
+        this.$store.commit("markdown/updateInput", value);
       }
     },
     renderedMd() {
-      return this.$store.getters.renderedMd;
+      return this.$store.getters["markdown/renderedMd"];
     }
   },
   mounted() {
@@ -38,7 +41,7 @@ export default {
   },
   methods: {
     renderPreview() {
-      this.$store.dispatch("renderPreview", this.input);
+      this.$store.dispatch("markdown/renderPreview", this.input);
     }
   }
 };

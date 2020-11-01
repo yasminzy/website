@@ -1,6 +1,5 @@
-export default {
-  state: {
-    input: `# Under the Sea
+export const state = () => ({
+  input: `# Under the Sea
 
   *Source*: [Color of the year **2019**](https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019-palette-exploration)
 
@@ -11,54 +10,54 @@ export default {
   * Sea pink
   * Limpet Shell
   * Living Coral
-  * Vibrant Yellow
+  * Vibrant Yellow 
   * Turkish Sea
   * Turtle Green
   * Blue Depths
 
   ![Color harmonies](/color-harmonies.png)`,
-    renderedMd: ""
-  },
+  renderedMd: ""
+});
 
-  actions: {
-    async renderPreview({ commit }, input) {
-      try {
-        const url = `https://api.github.com/markdown?client_id=${process.env.VUE_APP_MARKDOWN_CLIENT_ID}&client_secret=${process.env.VUE_APP_MARKDOWN_CLIENT_SECRET}`;
+export const actions = {
+  async renderPreview({ commit }, input) {
+    try {
+      const url = `https://api.github.com/markdown`;
 
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "text/html"
-          },
-          body: JSON.stringify({ text: input, mode: "gfm" })
-        });
+      const response = await fetch(url, {
+        Accept: "application/vnd.github.v3+json",
+        method: "POST",
+        headers: {
+          "Content-Type": "text/html"
+        },
+        body: JSON.stringify({ text: input, mode: "gfm" })
+      });
 
-        if (response.ok) {
-          const renderedMd = await response.text();
+      if (response.ok) {
+        const renderedMd = await response.text();
 
-          commit("renderedMd", renderedMd);
-        }
-      } catch (error) {
-        console.log(error); // eslint-disable-line no-console
+        commit("renderedMd", renderedMd);
       }
+    } catch (error) {
+      console.log(error); // eslint-disable-line no-console
     }
-  },
+  }
+};
 
-  mutations: {
-    updateInput(state, input) {
-      state.input = input;
-    },
-    renderedMd(state, result) {
-      state.renderedMd = result;
-    }
+export const mutations = {
+  updateInput(state, input) {
+    state.input = input;
   },
+  renderedMd(state, result) {
+    state.renderedMd = result;
+  }
+};
 
-  getters: {
-    input(state) {
-      return state.input;
-    },
-    renderedMd(state) {
-      return state.renderedMd;
-    }
+export const getters = {
+  input: state => {
+    return state.input;
+  },
+  renderedMd: state => {
+    return state.renderedMd;
   }
 };

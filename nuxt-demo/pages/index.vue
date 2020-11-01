@@ -2,17 +2,15 @@
   <div>
     <h1>Nuxt Demo</h1>
 
-    <ul class="list-group list-group-flush">
-      <li
+    <b-list-group flush>
+      <b-list-group-item
         v-for="(item, index) in projects"
         :key="index"
-        class="list-group-item p-0"
+        :to="urlize(item)"
       >
-        <nuxt-link :to="urlize(item)" class="d-block link">{{
-          item
-        }}</nuxt-link>
-      </li>
-    </ul>
+        {{ item }}
+      </b-list-group-item>
+    </b-list-group>
   </div>
 </template>
 
@@ -24,10 +22,9 @@ export default {
         "AOS",
         "Bootstrap",
         "Chart",
-        "Google Maps",
+        "Highlight",
         "Ionicons",
         "PostCSS",
-        "Prism",
         "Vue Lazyload",
         "Vuex",
         "Vuex Axios"
@@ -49,9 +46,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.link {
-  padding: 0.75rem 1.25rem;
-}
-</style>

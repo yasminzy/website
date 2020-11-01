@@ -22,22 +22,21 @@
 
     <hr class="my-5" />
 
-    <ul class="list-unstyled row">
-      <li
+    <b-row class="list-unstyled">
+      <b-col
         v-for="(item, index) in img"
         :key="index"
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-once="true"
-        class="align-items-center col-sm-6 d-flex flex-column justify-content-center mb-5"
+        sm="6"
+        class="align-items-center d-flex flex-column justify-content-center mb-5"
       >
-        <img :src="getImg(item)" class="img-fluid mr-3" />
+        <b-img fluid :src="getImg(item)" class="mb-3 mr-3" />
 
-        <div class="">
-          <h2 class="h4">{{ item }}</h2>
-        </div>
-      </li>
-    </ul>
+        <h2 class="h4">{{ item }}</h2>
+      </b-col>
+    </b-row>
   </div>
 </template>
 

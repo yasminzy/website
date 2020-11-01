@@ -1,24 +1,29 @@
 <template>
-  <div id="contact" class="bg-primary container-fluid mh-100 px-0 text-white">
-    <div class="container-fluid content py-3 mh-100">
-      <div class="container">
+  <b-container
+    id="contact"
+    fluid
+    bg-variant="primary"
+    class="bg-primary mh-100 px-0 text-white"
+  >
+    <b-container fluid class="content py-3 mh-100">
+      <b-container>
         <h3 class="mb-4">Contact Me</h3>
 
         <p>
-          You know I am busy beating up high-tiers while keeping Sera in the
-          dark. So reach me out through my sidekick Cecile.
+          You know I am busy teaching people lessons, so reach me through my
+          sidekick <del>Cecile</del> <ins>Zeke</ins>.
         </p>
 
         <hr class="bg-white" />
 
-        <div class="row">
-          <div class="col-md-7 mb-5 mb-md-0 py-3">
-            <form
+        <b-row>
+          <b-col md="7" class="mb-5 mb-md-0 py-3">
+            <b-form
               action="https://formspree.io/yasmin@yasminzy.com"
               method="POST"
             >
-              <div class="form-group">
-                <input
+              <b-form-group>
+                <b-form-input
                   id="name"
                   class="form-control"
                   type="text"
@@ -26,10 +31,10 @@
                   placeholder="Name"
                   required
                 />
-              </div>
+              </b-form-group>
 
-              <div class="form-group">
-                <input
+              <b-form-group>
+                <b-form-input
                   id="email"
                   class="form-control"
                   type="email"
@@ -38,10 +43,10 @@
                   placeholder="Email"
                   required
                 />
-              </div>
+              </b-form-group>
 
-              <div class="form-group">
-                <textarea
+              <b-form-group>
+                <b-form-textarea
                   id="message"
                   class="form-control"
                   rows="3"
@@ -49,7 +54,7 @@
                   placeholder="Message"
                   required
                 />
-              </div>
+              </b-form-group>
 
               <input type="hidden" name="_subject" value="Bootstrap Demo" />
               <input
@@ -58,22 +63,22 @@
                 value="https://www.yasminzy.com"
               />
 
-              <button
+              <b-button
                 type="submit"
                 class="bg-white btn d-flex align-items-center text-dark"
               >
                 SEND
-                <ion-icon name="send" class="pl-1 text-primary" />
-              </button>
-            </form>
-          </div>
+                <ion-icon name="send" class="pl-2 text-primary" />
+              </b-button>
+            </b-form>
+          </b-col>
 
-          <div class="col-md-3 offset-md-1">
-            <ul class="list-group mb-5 wrapper">
-              <li
+          <b-col md="3" offset-md="1">
+            <b-list-group class="mb-5">
+              <b-list-group-item
                 v-for="(item, index) in contact"
                 :key="index"
-                class="bg-transparent border-left-0 border-right-0 border-top-0 list-group-item px-0"
+                class="bg-transparent border-left-0 border-right-0 border-top-0 px-0"
               >
                 <div>
                   <p class="font-weight-bold mb-2 text-uppercase">
@@ -82,13 +87,13 @@
 
                   <small>{{ item.content }}</small>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+              </b-list-group-item>
+            </b-list-group>
+          </b-col>
+        </b-row>
+      </b-container>
+    </b-container>
+  </b-container>
 </template>
 
 <script>
@@ -102,36 +107,14 @@ export default {
         },
         {
           label: "Email",
-          content: "cecile[at]welston.com"
+          content: "king[at]welston.com"
         },
         {
           label: "Address",
-          content: "2019 Black Speech Bubble, ID"
+          content: "2020 Black Speech Bubble, ID"
         }
       ]
     };
   }
 };
 </script>
-
-<style lang="scss" scoped>
-h2 {
-  text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: initial;
-  }
-}
-
-li {
-  text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: initial;
-  }
-}
-
-li:last-child {
-  border-bottom: 0;
-}
-</style>

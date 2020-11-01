@@ -1,30 +1,29 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1>PostCSS Demo</h1>
 
     <p>Articles about PostCSS:</p>
 
-    <ul class="list-group">
-      <li
+    <b-list-group>
+      <b-list-group-item
         v-for="(item, index) in articles"
         :key="index"
-        class="list-group-item p-0"
+        :href="item.url"
+        target="_blank"
+        class="a d-block d-md-flex align-items-center"
       >
-        <a
-          :href="item.url"
-          target="_blank"
-          class="d-block d-md-flex align-items-center"
-        >
-          <img
-            :src="item.img"
-            :alt="item.title"
-            class="d-block img-thumbnail mr-md-3"
-          />
+        <b-img
+          block
+          fluid
+          thumbnail
+          :src="item.img"
+          :alt="item.title"
+          class="img mr-md-4"
+        />
 
-          <h2>{{ item.title }}</h2>
-        </a>
-      </li>
-    </ul>
+        <h2 class="h4 py-2">{{ item.title }}</h2>
+      </b-list-group-item>
+    </b-list-group>
   </div>
 </template>
 
@@ -59,14 +58,14 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
-.container {
+<style lang="postcss">
+.wrapper {
   font-family: system-ui;
   font-size: responsive;
   transition: all 250ms ease-in-cubic;
 }
 
-a {
+.a {
   color: var(--turkish-sea);
   padding: 0.75rem 1.25rem;
 
@@ -87,7 +86,7 @@ a {
   }
 }
 
-img {
+.img {
   @media (min-width: 768px) {
     max-width: 225px;
   }
