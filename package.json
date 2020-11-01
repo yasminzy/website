@@ -1,15 +1,23 @@
 {
   "private": true,
-  "devDependencies": {
-    "@vssue/api-github-v3": "^1.0.0",
-    "@vssue/vuepress-plugin-vssue": "^1.0.2",
-    "@vuepress/plugin-google-analytics": "^1.0.2",
-    "dotenv": "^8.0.0",
-    "vuepress-plugin-sitemap": "^2.1.2",
-    "vuepress": "^1.0.2"
+  "authors": {
+    "name": "Yasmin Zulfati Yusrina",
+    "email": "yasmin@yasminzy.com"
   },
+  "repository": "yasminzy/website",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vssue/api-github-v3": "^1.4.4",
+    "@vssue/vuepress-plugin-vssue": "^1.4.6",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-google-analytics": "^1.7.1",
+    "dotenv": "^8.2.0",
+    "vuepress": "^1.7.1",
+    "vuepress-plugin-clean-urls": "^1.1.2",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
