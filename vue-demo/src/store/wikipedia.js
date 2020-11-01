@@ -1,13 +1,11 @@
 import axios from "axios";
 
 export default {
-  state: { query: "", articles: [] },
+  state: () => ({ query: "", articles: [] }),
 
   actions: {
     async getArticles({ state, commit }) {
-      const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${
-        state.query
-      }&origin=*`;
+      const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${state.query}&origin=*`;
 
       const response = await axios.get(url);
 
@@ -35,10 +33,10 @@ export default {
   },
 
   getters: {
-    query(state) {
+    query: (state) => {
       return state.query;
     },
-    articles(state) {
+    articles: (state) => {
       return state.articles;
     }
   }

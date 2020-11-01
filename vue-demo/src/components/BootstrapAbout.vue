@@ -14,15 +14,14 @@
       <h2 class="display-4">John Doe</h2>
 
       <p class="lead">
-        I am also known as joker, shadow king, and
-        &#647;n&#477;sp&#592;&#654;.<br />I hate the hierarchy, so I am going to
-        break it.
+        I am also known as joker, <del>shadow</del> king, and
+        &#647;n&#477;sp&#592;&#654;.<br />I hate the hierarchy, so I broke it.
       </p>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 img {
   max-height: 300px;
 }

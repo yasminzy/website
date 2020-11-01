@@ -3,14 +3,12 @@
     <h1>Vue Demo</h1>
 
     <ul class="list-group list-group-flush">
-      <li
-        v-for="(item, index) in projects"
-        :key="index"
-        class="list-group-item p-0"
-      >
-        <router-link :to="urlize(item)" class="d-block link">{{
-          item
-        }}</router-link>
+      <li v-for="(item, index) in projects" :key="index" class="list-unstyled">
+        <router-link
+          :to="urlize(item)"
+          class="list-group-item list-group-item-action"
+          >{{ item }}</router-link
+        >
       </li>
     </ul>
   </div>
@@ -23,12 +21,8 @@ export default {
       projects: [
         "AOS",
         "Bootstrap",
-        "Chart",
-        "Google Maps",
         "Ionicons",
         "PostCSS",
-        "Prism",
-        "Vue Lazyload",
         "Vuex",
         "Vuex Axios"
       ]
@@ -50,8 +44,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.link {
-  padding: 0.75rem 1.25rem;
+<style scoped>
+.list-group-item {
+  border-width: 0 0 1px;
 }
 </style>

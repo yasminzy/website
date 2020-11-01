@@ -31,11 +31,9 @@
         data-aos-once="true"
         class="align-items-center col-sm-6 d-flex flex-column justify-content-center mb-5"
       >
-        <img :src="getImg(item)" class="img-fluid mr-3" />
+        <img :src="getImg(item)" class="fluid mb-3 mr-3" />
 
-        <div class="">
-          <h2 class="h4">{{ item }}</h2>
-        </div>
+        <h2 class="h4">{{ item }}</h2>
       </li>
     </ul>
   </div>

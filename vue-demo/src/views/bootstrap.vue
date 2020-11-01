@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import BootstrapAbout from "../components/bootstrap-about";
-import BootstrapContact from "../components/bootstrap-contact";
-import BootstrapNav from "../components/bootstrap-nav";
+import BootstrapAbout from "@/components/BootstrapAbout";
+import BootstrapContact from "@/components/BootstrapContact";
+import BootstrapNav from "@/components/BootstrapNav";
 
 export default {
   components: {

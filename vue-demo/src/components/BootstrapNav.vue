@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-dark navbar navbar-expand-lg navbar-dark w-100">
+  <nav class="bg-dark navbar navbar-expand-lg navbar-dark">
     <router-link class="navbar-brand" to="/">
       <img
         :src="require('../assets/logo.svg')"
@@ -12,13 +12,13 @@
     </router-link>
 
     <button
-      class="border-0 navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
       aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      class="navbar-toggler"
+      data-target="#navbarNav"
+      data-toggle="collapse"
+      type="button"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,15 +44,6 @@ export default {
         { to: "#contact", label: "Contact" }
       ]
     };
-  },
-  methods: {
-    to(input) {
-      if (input.label) {
-        return input.to;
-      } else {
-        return `/${input.toLowerCase()}`;
-      }
-    }
   }
 };
 </script>

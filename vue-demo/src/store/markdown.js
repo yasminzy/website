@@ -1,5 +1,5 @@
 export default {
-  state: {
+  state: () => ({
     input: `# Under the Sea
 
   *Source*: [Color of the year **2019**](https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019-palette-exploration)
@@ -18,16 +18,15 @@ export default {
 
   ![Color harmonies](/color-harmonies.png)`,
     renderedMd: ""
-  },
+  }),
 
   actions: {
     async renderPreview({ commit }, input) {
       try {
-        const url = `https://api.github.com/markdown?client_id=${
-          process.env.VUE_APP_MARKDOWN_CLIENT_ID
-        }&client_secret=${process.env.VUE_APP_MARKDOWN_CLIENT_SECRET}`;
+        const url = `https://api.github.com/markdown`;
 
         const response = await fetch(url, {
+          Accept: "application/vnd.github.v3+json",
           method: "POST",
           headers: {
             "Content-Type": "text/html"
@@ -56,10 +55,10 @@ export default {
   },
 
   getters: {
-    input(state) {
+    input: (state) => {
       return state.input;
     },
-    renderedMd(state) {
+    renderedMd: (state) => {
       return state.renderedMd;
     }
   }

@@ -5,8 +5,8 @@
         <h3 class="mb-4">Contact Me</h3>
 
         <p>
-          You know I am busy beating up high-tiers while keeping Sera in the
-          dark. So reach me out through my sidekick Cecile.
+          You know I am busy teaching people lessons, so reach me through my
+          sidekick <del>Cecile</del> <ins>Zeke</ins>.
         </p>
 
         <hr class="bg-white" />
@@ -63,7 +63,6 @@
                 class="bg-white btn d-flex align-items-center text-dark"
               >
                 SEND
-                <ion-icon name="send" class="pl-1 text-primary" />
               </button>
             </form>
           </div>
@@ -102,11 +101,11 @@ export default {
         },
         {
           label: "Email",
-          content: "cecile[at]welston.com"
+          content: "king[at]welston.com"
         },
         {
           label: "Address",
-          content: "2019 Black Speech Bubble, ID"
+          content: "2020 Black Speech Bubble, ID"
         }
       ]
     };

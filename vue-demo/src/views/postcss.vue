@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1>PostCSS Demo</h1>
 
     <p>Articles about PostCSS:</p>
@@ -8,7 +8,7 @@
       <li
         v-for="(item, index) in articles"
         :key="index"
-        class="list-group-item p-0"
+        class="list-group-item"
       >
         <a
           :href="item.url"
@@ -18,10 +18,10 @@
           <img
             :src="item.img"
             :alt="item.title"
-            class="d-block img-thumbnail mr-md-3"
+            class="d-block img-thumbnail mr-md-4"
           />
 
-          <h2>{{ item.title }}</h2>
+          <h2 class="h4 py-2">{{ item.title }}</h2>
         </a>
       </li>
     </ul>
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.container {
+.wrapper {
   font-family: system-ui;
   font-size: responsive;
   transition: all 250ms ease-in-cubic;

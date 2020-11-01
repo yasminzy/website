@@ -12,6 +12,7 @@
     >
     </textarea>
 
+    <!-- eslint-disable-next-line -->
     <div class="border border-primary container" v-html="renderedMd"></div>
   </div>
 </template>

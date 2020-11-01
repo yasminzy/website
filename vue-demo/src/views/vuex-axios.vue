@@ -12,7 +12,7 @@
     />
 
     <ul class="list-group list-unstyled">
-      <li v-for="(item, index) in articles" :key="index">
+      <li v-for="(item, index) in articles" v-show="item.title" :key="index">
         <a
           :href="item.url"
           class="list-group-item list-group-item-action"
