@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.jpg
+heroImage: /hero.png
 heroText: Yasmin Zulfati Yusrina
 tagline: I write tutorials for Vue and Nuxt
 actionText: Check out tutorial
