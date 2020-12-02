@@ -26,7 +26,10 @@ import store from "./store";
 
 const app = createApp(App);
 
-app.use(store).use(router).mount("#app");
+app
+  .use(store)
+  .use(router)
+  .mount("#app");
 ```
 
 3. Create a template, e.g. in `src/views/vuex.vue`.
