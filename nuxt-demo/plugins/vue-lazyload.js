@@ -6,7 +6,7 @@ import loading from "../assets/loading.svg";
 
 Vue.use(VueLazyload, {
   preLoad: 1,
-  error: error,
-  loading: loading,
+  error,
+  loading,
   attempt: 1
 });
