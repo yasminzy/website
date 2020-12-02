@@ -13,10 +13,12 @@
       >
       </b-form-textarea>
 
+      <!-- eslint-disable -->
       <b-container
         class="border border-primary"
         v-html="renderedMd"
       ></b-container>
+      <!-- eslint-enable -->
     </div>
   </client-only>
 </template>
