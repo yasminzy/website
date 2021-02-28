@@ -30,10 +30,10 @@ export const mutations = {
 };
 
 export const getters = {
-  query: state => {
+  query: (state) => {
     return state.query;
   },
-  articles: state => {
+  articles: (state) => {
     return state.articles;
   }
 };
