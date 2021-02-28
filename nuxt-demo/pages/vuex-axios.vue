@@ -11,7 +11,7 @@
       @input="getArticles"
     />
 
-    <b-list-group class="list-unstyled">
+    <b-list-group v-if="query" class="list-unstyled">
       <b-list-group-item
         v-for="(item, index) in articles"
         v-show="item.title"

@@ -11,7 +11,7 @@
       @input="getArticles"
     />
 
-    <ul class="list-group list-unstyled">
+    <ul v-if="query" class="list-group list-unstyled">
       <li v-for="(item, index) in articles" v-show="item.title" :key="index">
         <a
           :href="item.url"
