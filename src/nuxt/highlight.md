@@ -14,12 +14,12 @@ meta:
 
 ## :footprints: Steps
 
-1. Create a Nuxt project and install highlight.js and Vue Highlight.js. Vue Highlight.js does not support highlight.js v10 at the time of this writing so just install the latest v9 version.
+1. Create a Nuxt project and install highlight.js and Vue Highlight.js. To use highlight.js v10, use the next version of Vue Highlight.js.
 
 ```bash
 npx create-nuxt-app nuxt-demo
 cd nuxt-demo
-npm i highlight.js@9.18.3 vue-highlight.js
+npm i highlight.js vue-highlight.js@next
 ```
 
 2. Create Highlight.js plugin in `plugins/highlight.js`. Import and register the languages, as well the style you want to use. I do not see `html` in the folder so I use `xml` instead.
