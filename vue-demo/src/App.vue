@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <ol v-if="this.$route.path != '/'" class="breadcrumb w-100">
+    <ol v-if="$route.path != '/'" class="breadcrumb w-100">
       <li
         v-for="(item, index) in items"
         :key="index"

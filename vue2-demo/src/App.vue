@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-breadcrumb
-      v-if="this.$route.path != '/'"
+      v-if="$route.path != '/'"
       :items="items"
       class="w-100"
     ></b-breadcrumb>
