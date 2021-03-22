@@ -32,7 +32,7 @@ export default {
     return {
       html: `<article>
   <h1 class="title">How to Use Highlight.js in a Vue/Nuxt Project</h1>
-  <p>Go to https://yasminzy.com/tutorial/highlight/</p>
+  <p>Go to https://yasminzy.com/vue/highlight/</p>
 </article>`
     };
   }
