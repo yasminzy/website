@@ -3,6 +3,11 @@ export default {
 
   head: {
     title: "Nuxt Demo",
+
+    htmlAttrs: {
+      lang: "en"
+    },
+
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -12,8 +17,7 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Fira+Mono&family=Fira+Sans:wght@400;600&display=swap"
+        href: "https://fonts.googleapis.com/css2?family=Fira+Mono&family=Fira+Sans:wght@400;600&display=swap"
       }
     ],
     script: [
@@ -42,7 +46,7 @@ export default {
 
   components: true,
 
-  buildModules: ["@nuxtjs/eslint-module", "@nuxtjs/stylelint-module"],
+  buildModules: ["@nuxtjs/eslint-module"],
 
   modules: ["bootstrap-vue/nuxt", "@nuxtjs/axios"],
 
