@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: ["plugin:vue/recommended", "eslint:recommended", "@vue/prettier"],
   parserOptions: {
-    plugins: ["@babel"]
+    parser: "babel-eslint"
   },
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
