@@ -30,7 +30,13 @@
         data-aos-delay="500"
         data-aos-once="true"
         sm="6"
-        class="align-items-center d-flex flex-column justify-content-center mb-5"
+        class="
+          align-items-center
+          d-flex
+          flex-column
+          justify-content-center
+          mb-5
+        "
       >
         <b-img fluid :src="getImg(item)" class="mb-3 mr-3" />
 

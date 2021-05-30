@@ -54,10 +54,10 @@ export const mutations = {
 };
 
 export const getters = {
-  input: state => {
+  input: (state) => {
     return state.input;
   },
-  renderedMd: state => {
+  renderedMd: (state) => {
     return state.renderedMd;
   }
 };
