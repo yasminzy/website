@@ -1,13 +1,15 @@
 <template>
   <div id="about" class="bg-white rounded-0 jumbotron mb-0 row">
     <div
-      class="col-md-4 order-md-2 d-flex align-items-center justify-content-center"
+      class="
+        col-md-4
+        order-md-2
+        d-flex
+        align-items-center
+        justify-content-center
+      "
     >
-      <img
-        :src="require('../assets/john-doe.jpeg')"
-        alt="John Doe"
-        class="img-fluid"
-      />
+      <img src="../assets/john-doe.jpeg" alt="John Doe" class="img-fluid" />
     </div>
 
     <div class="col-md-8 order-md-1 container">

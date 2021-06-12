@@ -2,7 +2,7 @@
   <nav class="bg-dark navbar navbar-expand-lg navbar-dark">
     <router-link class="navbar-brand" to="/">
       <img
-        :src="require('../assets/logo.svg')"
+        src="../assets/logo.svg"
         class="d-inline-block align-top"
         alt="Logo"
         width="30"
