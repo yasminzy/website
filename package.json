@@ -19,5 +19,9 @@
     "vuepress": "^1.8.2",
     "vuepress-plugin-clean-urls": "^1.1.2",
     "vuepress-plugin-sitemap": "^2.3.1"
+  },
+  "engines": {
+    "node": ">=16.3.0",
+    "npm": ">=7.16.0"
   }
 }
