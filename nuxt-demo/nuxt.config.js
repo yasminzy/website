@@ -32,16 +32,13 @@ export default {
     ]
   },
 
-  css: [
-    { src: "@/assets/custom-bootstrap", lang: "scss" },
-    "@/assets/variables.css"
-  ],
+  css: [{ src: "@/assets/custom-bootstrap.scss" }, "@/assets/variables.css"],
 
   plugins: [
-    "@/plugins/aos.client",
-    "@/plugins/highlight",
-    "@/plugins/ionicons",
-    "@/plugins/vue-lazyload"
+    "@/plugins/aos.client.js",
+    "@/plugins/highlight.js",
+    "@/plugins/ionicons.js",
+    "@/plugins/vue-lazyload.js"
   ],
 
   components: true,
