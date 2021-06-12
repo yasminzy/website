@@ -36,21 +36,18 @@ export default {
         {
           title:
             "Some things you may think about PostCSS... and you might be wrong",
-          url:
-            "http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/",
+          url: "http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/",
           img: "https://placeimg.com/900/300/tech"
         },
         {
           title:
             "It's Time for Everyone to Learn About PostCSS What It Really Is; What It Really Does",
-          url:
-            "https://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/",
+          url: "https://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/",
           img: "https://placeimg.com/900/300/tech/grayscale"
         },
         {
           title: "PostCSS Deep Dive",
-          url:
-            "https://webdesign.tutsplus.com/series/postcss-deep-dive--cms-889",
+          url: "https://webdesign.tutsplus.com/series/postcss-deep-dive--cms-889",
           img: "https://placeimg.com/900/300/tech/sepia"
         }
       ]

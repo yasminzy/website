@@ -72,7 +72,12 @@
               <li
                 v-for="(item, index) in contact"
                 :key="index"
-                class="bg-transparent border-left-0 border-right-0 border-top-0 list-group-item px-0"
+                class="
+                  bg-transparent
+                  border-left-0 border-right-0 border-top-0
+                  list-group-item
+                  px-0
+                "
               >
                 <div>
                   <p class="font-weight-bold mb-2 text-uppercase">
