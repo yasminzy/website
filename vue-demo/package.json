@@ -9,7 +9,7 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "core-js": "^3.16.0",
+    "core-js": "^3.16.1",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "postcss-preset-env": "^6.7.0",
@@ -20,23 +20,23 @@
     "vuex": "^4.0.0-rc.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/eslint-parser": "^7.14.9",
-    "@vue/cli-plugin-babel": "^5.0.0-beta.2",
-    "@vue/cli-plugin-eslint": "^5.0.0-beta.2",
-    "@vue/cli-plugin-router": "^5.0.0-beta.2",
-    "@vue/cli-plugin-vuex": "^5.0.0-beta.2",
-    "@vue/cli-service": "^5.0.0-beta.2",
-    "@vue/compiler-sfc": "^3.1.5",
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@vue/cli-plugin-babel": "^5.0.0-beta.3",
+    "@vue/cli-plugin-eslint": "^5.0.0-beta.3",
+    "@vue/cli-plugin-router": "^5.0.0-beta.3",
+    "@vue/cli-plugin-vuex": "^5.0.0-beta.3",
+    "@vue/cli-service": "^5.0.0-beta.3",
+    "@vue/compiler-sfc": "^3.2.2",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.15.1",
+    "eslint-plugin-vue": "^7.16.0",
     "eslint": "^7.32.0",
-    "lint-staged": "^11.1.1",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
     "sass-loader": "^12.1.0",
-    "sass": "^1.37.2"
+    "sass": "^1.37.5"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

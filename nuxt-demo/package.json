@@ -22,9 +22,9 @@
     "bootstrap-vue": "^2.21.2",
     "bootstrap": "^4.6.0",
     "chart.js": "^2.9.4",
-    "core-js": "^3.16.0",
+    "core-js": "^3.16.1",
     "highlight.js": "^10.7.3",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.15.8",
     "postcss-preset-env": "^6.7.0",
     "rucksack-css": "^1.0.2",
     "vue-chartjs": "^3.5.1",
@@ -39,12 +39,12 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.15.1",
+    "eslint-plugin-vue": "^7.16.0",
     "eslint": "^7.32.0",
     "husky": "^7.0.1",
-    "lint-staged": "^11.1.1",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
     "sass-loader": "^10.2.0",
-    "sass": "^1.37.2"
+    "sass": "^1.37.5"
   }
 }
